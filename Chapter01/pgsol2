@@ -1,0 +1,22 @@
+-- Primero, inicia una sesión con tu usuario de PostgreSQL (por ejemplo, "postgres"):
+psql -U postgres
+
+-- Luego, crea la base de datos:
+CREATE DATABASE PACKT_ONLINE_SHOP;
+
+-- Conectarse a la base de datos "PACKT_ONLINE_SHOP" en la línea de comandos:
+\c PACKT_ONLINE_SHOP;
+
+-- Crear la tabla "Customers":
+CREATE TABLE Customers
+(
+    FirstName VARCHAR(50),
+    MiddleName VARCHAR(50),
+    LastName VARCHAR(50),
+    HomeAddress VARCHAR(250),
+    Email VARCHAR(200),
+    Phone VARCHAR(50),
+    Notes VARCHAR(250)
+);
+
+
